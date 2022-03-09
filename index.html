@@ -116,6 +116,7 @@
             padding-left: 180px;
             padding-bottom: 50px;
         }
+
         .footer-wrapper {
             background-color: #ffc50c;
             padding: 30px 25px 25px 180px;
@@ -124,6 +125,25 @@
 </head>
 
 <body>
+
+    <script>
+        alert('Hello, Welcome To BK Event Organizer');
+        console.log("Hello, Welcome To BK Event Organizer");
+
+        // remove element
+        document.removeChild('contact');
+
+        function changeText(id){
+            id.innerHTML = "Our Services";
+        }
+
+        function send() {
+            alert('Maaf, Pesan Anda Belum Dapat Di Kirim');
+            console.log();
+        }
+
+    </script>
+
     <header class="header">
         <!-- navbar -->
         <nav class="navbar navbar-expand-lg navbar-light header navbar fixed-top">
@@ -260,8 +280,8 @@
     </div>
 
     <!-- content card -->
-    <div class="content-title">
-        <h1>Layanan Kami</h1>
+    <div class="content-title" id="con">
+        <h1 onmouseover="changeText(this)">Layanan Kami</h1>
     </div>
     <div class="content">
         <div class="content-grid">
@@ -384,7 +404,7 @@
             <label for="exampleFormControlTextarea1" class="form-label">Pesan</label>
             <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
         </div>
-        <button type="button" class="btn btn-primary">Kirim</button>
+        <button type="button" class="btn btn-primary" onclick="send()">Kirim</button>
     </div>
     <div class="footer-wrapper">
         <img src="./image/Logo.png" style="width: 50px;">
@@ -392,4 +412,5 @@
         <p>Copyright © 2022. BK Event Organizer. All Rights Reserved</p>
     </div>
 </body>
+
 </html>

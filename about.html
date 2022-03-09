@@ -76,6 +76,12 @@
 </head>
 
 <body>
+    
+    <script>
+        alert('Hello, Welcome To BK Event Organizer');
+        console.log("Hello Word");
+    </script>
+    
     <!-- navbar -->
     <header class="header">
         <nav class="navbar navbar-expand-lg navbar-light header navbar fixed-top">
@@ -263,6 +269,13 @@
             </div>
         </div>
     </div>
+    <script>
+        let p = document.createElement("p");
+        p.innerHTML = "Klik untuk mendapatkan info";
+        p.style = "text-align: right; margin: auto; padding-right: 160px; background-color:#D1D1D1"
+        p.onclick = () => {alert("Nomor whatsapp: 089899928300")};
+        document.body.appendChild(p);
+    </script>
     <div class="footer-wrapper">
         <img src="./image/Logo.png" style="width: 50px;">
         BK Event Organizer
